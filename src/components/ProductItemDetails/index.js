@@ -165,24 +165,28 @@ class ProductItemDetails extends Component {
               className="similar-products-list-container"
               key={eachProduct.title}
             >
-              <img
-                src={eachProduct.imageUrl}
-                alt="similar product"
-                className="similar-products-logo"
-              />
-              <p className="similar-product-title">{eachProduct.title}</p>
-              <p className="similar-product-brand">by {eachProduct.brand}</p>
-              <div className="similar-products-rating-container">
-                <p className="similar-product-price">Rs {eachProduct.price}</p>
-                <div className="similar-products-button-rating-container">
-                  <p className="rating">{eachProduct.rating}</p>
-                  <img
-                    src="https://assets.ccbp.in/frontend/react-js/star-img.png"
-                    alt="star"
-                    className="star"
-                  />
+              <Link to={`/products/${eachProduct.id}`}>
+                <img
+                  src={eachProduct.imageUrl}
+                  alt="similar product"
+                  className="similar-products-logo"
+                />
+                <p className="similar-product-title">{eachProduct.title}</p>
+                <p className="similar-product-brand">by {eachProduct.brand}</p>
+                <div className="similar-products-rating-container">
+                  <p className="similar-product-price">
+                    Rs {eachProduct.price}
+                  </p>
+                  <div className="similar-products-button-rating-container">
+                    <p className="rating">{eachProduct.rating}</p>
+                    <img
+                      src="https://assets.ccbp.in/frontend/react-js/star-img.png"
+                      alt="star"
+                      className="star"
+                    />
+                  </div>
                 </div>
-              </div>
+              </Link>
             </li>
           ))}
         </ul>
