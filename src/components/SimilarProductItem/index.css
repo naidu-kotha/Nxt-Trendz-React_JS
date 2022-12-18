@@ -1,1 +1,49 @@
-/* Write your CSS here */
+.similar-products-list-container {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.similar-product-link {
+  text-decoration: none;
+}
+
+.similar-products-logo {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.similar-product-title {
+  font-size: 22px;
+  font-family: 'roboto';
+  font-weight: bold;
+  color: #12022f;
+  margin-bottom: 0px;
+}
+
+.similar-product-brand {
+  color: #616e7c;
+  font-size: 18px;
+  font-family: 'roboto';
+  /* font-weight: bold; */
+}
+.similar-products-rating-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.similar-products-button-rating-container {
+  display: flex;
+  align-items: center;
+  background-color: #3b82f6;
+  border-radius: 8px;
+  padding: 6px 20px;
+}
+.similar-product-price {
+  font-size: 22px;
+  font-family: 'roboto';
+  font-weight: bold;
+  color: #12022f;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
